@@ -63,7 +63,7 @@ export default function FAQSection() {
             <p className="text-slate-500 text-base leading-relaxed mb-8">
               D&apos;autres questions ? Nous sommes là pour vous aider. Envoyez-nous un message et nous vous répondrons rapidement.
             </p>
-            <a
+            {/* <a
               href={`https://wa.me/${siteConfig.contact.whatsapp.replace(/\D/g, "")}?text=Bonjour%2C%20j%27ai%20une%20question%20sur%20vos%20services%20de%20nettoyage.`}
               target="_blank"
               rel="noopener noreferrer"
@@ -72,7 +72,7 @@ export default function FAQSection() {
             >
               <WhatsAppIcon />
               Posez votre question sur WhatsApp
-            </a>
+            </a> */}
           </div>
 
           {/* Right – Accordion */}

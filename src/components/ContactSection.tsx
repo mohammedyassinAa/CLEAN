@@ -113,7 +113,7 @@ export default function ContactSection() {
             </div>
 
             {/* Direct WhatsApp CTA */}
-            <a
+            {/* <a
               href={`https://wa.me/${whatsappNumber}?text=Bonjour%2C%20je%20souhaite%20demander%20un%20devis%20de%20nettoyage.`}
               target="_blank"
               rel="noopener noreferrer"
@@ -122,7 +122,7 @@ export default function ContactSection() {
             >
               <WhatsAppIcon />
               Chat sur WhatsApp
-            </a>
+            </a> */}
           </div>
 
           {/* Right – Form */}
