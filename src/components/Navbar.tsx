@@ -7,7 +7,6 @@ import { siteConfig } from "@/config/siteConfig";
 const navLinks = [
   { label: "Accueil", href: "#hero" },
   { label: "Services", href: "#services" },
-  { label: "Tarifs", href: "#pricing" },
   { label: "À propos", href: "#about" },
   { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#contact" },
@@ -33,23 +32,22 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
-        <Link href="#hero" className="flex items-center gap-2" onClick={handleNavClick}>
-          {/* TODO: Replace the text logo with an actual <Image> once the client provides a logo file */}
-          <div className="flex items-center gap-2">
-            <div
-              className="w-9 h-9 rounded-full flex items-center justify-center text-white font-bold text-lg"
-              style={{ backgroundColor: siteConfig.colors.primary }}
-            >
-              J
-            </div>
+        <Link href="#hero" className="flex items-center gap-2.5" onClick={handleNavClick}>
+          <LogoMark />
+          <span
+            className={`font-extrabold text-xl tracking-tight transition-colors duration-300 ${
+              scrolled ? "text-slate-900" : "text-white"
+            }`}
+          >
+            <span>Joud</span>
             <span
-              className={`font-bold text-xl transition-colors duration-300 ${
-                scrolled ? "text-slate-900" : "text-white"
+              className={`font-light ml-1 transition-colors duration-300 ${
+                scrolled ? "text-sky-500" : "text-sky-200"
               }`}
             >
-              {siteConfig.businessName}
+              clean
             </span>
-          </div>
+          </span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -119,6 +117,43 @@ export default function Navbar() {
         </div>
       )}
     </header>
+  );
+}
+
+function LogoMark() {
+  return (
+    <svg
+      width="38"
+      height="38"
+      viewBox="0 0 38 38"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <defs>
+        <linearGradient id="joud-logo-bg" x1="0" y1="0" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#0284c7" />
+          <stop offset="1" stopColor="#10b981" />
+        </linearGradient>
+      </defs>
+      {/* Rounded square background */}
+      <rect width="38" height="38" rx="10" fill="url(#joud-logo-bg)" />
+      {/* Soft inner highlight */}
+      <ellipse cx="14" cy="10" rx="9" ry="5" fill="white" fillOpacity="0.13" />
+      {/* Stylised letter J */}
+      <path
+        d="M22.5 9H19.5V24.5C19.5 26.985 17.71 29 15 29C12.29 29 10.5 26.985 10.5 24.5H13.5C13.5 25.328 14.172 26 15 26C15.828 26 16.5 25.328 16.5 24.5V9H13.5V6H22.5V9Z"
+        fill="white"
+      />
+      {/* 4-point sparkle top-right */}
+      <path
+        d="M30.5 7 L31.4 9.6 L34 10.5 L31.4 11.4 L30.5 14 L29.6 11.4 L27 10.5 L29.6 9.6Z"
+        fill="white"
+        fillOpacity="0.85"
+      />
+      {/* Small bubble accent bottom-left */}
+      <circle cx="8" cy="30.5" r="2" fill="white" fillOpacity="0.3" />
+    </svg>
   );
 }
 
