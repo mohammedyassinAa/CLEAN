@@ -2,7 +2,7 @@ import { siteConfig } from "@/config/siteConfig";
 
 export default function HeroSection() {
   const whatsappNumber = siteConfig.contact.whatsapp.replace(/\D/g, "");
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Hello%2C%20I%20would%20like%20to%20request%20a%20cleaning%20quote.`;
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Bonjour%2C%20je%20souhaite%20demander%20un%20devis%20de%20nettoyage.`;
 
   return (
     <section
@@ -41,8 +41,7 @@ export default function HeroSection() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm border border-white/30 text-white text-sm font-medium px-4 py-2 rounded-full mb-6">
           <span>⭐</span>
-          <span>Trusted by 500+ clients in Casablanca</span>
-          {/* TODO: Update this badge with real client count and city */}
+          <span>Plus de 500 clients satisfaits à Casablanca</span>
         </div>
 
         {/* Headline */}

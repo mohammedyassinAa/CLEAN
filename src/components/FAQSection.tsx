@@ -58,21 +58,20 @@ export default function FAQSection() {
               FAQ
             </span>
             <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mt-2 mb-5 leading-tight">
-              Frequently Asked Questions
+              Questions Fréquentes
             </h2>
             <p className="text-slate-500 text-base leading-relaxed mb-8">
-              Have more questions? We are happy to help. Send us a message and we
-              will get back to you right away.
+              D&apos;autres questions ? Nous sommes là pour vous aider. Envoyez-nous un message et nous vous répondrons rapidement.
             </p>
             <a
-              href={`https://wa.me/${siteConfig.contact.whatsapp.replace(/\D/g, "")}?text=Hello%2C%20I%20have%20a%20question%20about%20your%20cleaning%20services.`}
+              href={`https://wa.me/${siteConfig.contact.whatsapp.replace(/\D/g, "")}?text=Bonjour%2C%20j%27ai%20une%20question%20sur%20vos%20services%20de%20nettoyage.`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-white transition-all duration-300 hover:opacity-90 hover:scale-105"
               style={{ backgroundColor: siteConfig.colors.primary }}
             >
               <WhatsAppIcon />
-              Ask on WhatsApp
+              Posez votre question sur WhatsApp
             </a>
           </div>
 
