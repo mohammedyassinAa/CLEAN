@@ -18,26 +18,17 @@ function ServiceCard({ service }: { service: Service }) {
 
       {/* Content */}
       <h3 className="text-lg font-bold text-slate-900 mb-2">{service.name}</h3>
-      <p className="text-slate-500 text-sm leading-relaxed flex-1 mb-4">
+      <p className="text-slate-500 text-sm leading-relaxed flex-1 mb-5">
         {service.shortDescription}
       </p>
 
-      {/* Pricing info */}
-      <div className="flex items-center justify-between mt-auto pt-4 border-t border-slate-100">
-        <div>
-          <span
-            className="text-sm font-semibold"
-            style={{ color: siteConfig.colors.primaryDark }}
-          >
-            {service.basePrice}
-          </span>
-          <span className="text-xs text-slate-400 ml-1">· {service.period}</span>
-        </div>
+      {/* CTA */}
+      <div className="mt-auto pt-4 border-t border-slate-100 flex justify-center">
         <a
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs font-semibold px-3 py-1.5 rounded-full text-white transition-all duration-200 hover:opacity-90"
+          className="text-sm font-semibold px-5 py-2 rounded-full text-white transition-all duration-200 hover:opacity-90 hover:scale-105"
           style={{ backgroundColor: siteConfig.colors.primary }}
         >
           Réserver

@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang={siteConfig.seo.lang}>
+    <html lang={siteConfig.seo.lang} className="scroll-smooth">
       <body className="antialiased bg-white text-slate-900">
         {children}
       </body>
