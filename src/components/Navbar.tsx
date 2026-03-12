@@ -2,14 +2,13 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { siteConfig } from "@/config/siteConfig";
 
 const navLinks = [
-  { label: "Home", href: "#hero" },
+  { label: "Accueil", href: "#hero" },
   { label: "Services", href: "#services" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "About", href: "#about" },
+  { label: "Tarifs", href: "#pricing" },
+  { label: "À propos", href: "#about" },
   { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#contact" },
 ];
@@ -41,7 +40,7 @@ export default function Navbar() {
               className="w-9 h-9 rounded-full flex items-center justify-center text-white font-bold text-lg"
               style={{ backgroundColor: siteConfig.colors.primary }}
             >
-              S
+              J
             </div>
             <span
               className={`font-bold text-xl transition-colors duration-300 ${
@@ -114,7 +113,7 @@ export default function Navbar() {
               style={{ backgroundColor: siteConfig.colors.primary }}
             >
               <WhatsAppIcon />
-              Chat on WhatsApp
+              Contacter sur WhatsApp
             </a>
           </nav>
         </div>

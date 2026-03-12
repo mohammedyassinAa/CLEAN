@@ -31,14 +31,14 @@ export default function ContactSection() {
 
   const buildWhatsAppMessage = (f: FormState) =>
     [
-      `Hello, I would like to request a cleaning quote:`,
-      `Name: ${f.name}`,
-      `Phone: ${f.phone}`,
-      f.email ? `Email: ${f.email}` : "",
-      `City: ${f.city}`,
-      f.service ? `Service: ${f.service}` : "",
-      f.date ? `Preferred date: ${f.date}` : "",
-      f.message ? `Details: ${f.message}` : "",
+      `Bonjour, je souhaite demander un devis pour un service de nettoyage :`,
+      `Nom : ${f.name}`,
+      `Téléphone : ${f.phone}`,
+      f.email ? `Email : ${f.email}` : "",
+      `Ville : ${f.city}`,
+      f.service ? `Service : ${f.service}` : "",
+      f.date ? `Date souhaitée : ${f.date}` : "",
+      f.message ? `Détails : ${f.message}` : "",
     ]
       .filter(Boolean)
       .join("\n");
@@ -72,7 +72,7 @@ export default function ContactSection() {
               className="text-sm font-semibold uppercase tracking-widest"
               style={{ color: siteConfig.colors.primary }}
             >
-              Get In Touch
+              Nous Contacter
             </span>
             <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mt-2 mb-5 leading-tight">
               {siteConfig.contactForm.headline}
@@ -81,11 +81,16 @@ export default function ContactSection() {
               {siteConfig.contactForm.subheadline}
             </p>
 
-            {/* Contact details */}
             <div className="flex flex-col gap-4">
               <ContactDetail
+                icon="📱"
+                label="WhatsApp"
+                value={siteConfig.contact.whatsapp}
+                href={`https://wa.me/${siteConfig.contact.whatsapp.replace(/\D/g, "")}`}
+              />
+              <ContactDetail
                 icon="📞"
-                label="Phone / WhatsApp"
+                label="Téléphone"
                 value={siteConfig.contact.phone}
                 href={`tel:${siteConfig.contact.phone}`}
               />
@@ -97,26 +102,26 @@ export default function ContactSection() {
               />
               <ContactDetail
                 icon="📍"
-                label="Address"
+                label="Adresse"
                 value={siteConfig.contact.address}
               />
               <ContactDetail
                 icon="🕐"
-                label="Working Hours"
+                label="Horaires"
                 value={siteConfig.contact.workingHours}
               />
             </div>
 
             {/* Direct WhatsApp CTA */}
             <a
-              href={`https://wa.me/${whatsappNumber}?text=Hello%2C%20I%20would%20like%20to%20request%20a%20cleaning%20quote.`}
+              href={`https://wa.me/${whatsappNumber}?text=Bonjour%2C%20je%20souhaite%20demander%20un%20devis%20de%20nettoyage.`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 mt-8 px-6 py-3.5 rounded-full font-semibold text-white transition-all duration-300 hover:opacity-90 hover:scale-105"
               style={{ backgroundColor: "#25D366" }}
             >
               <WhatsAppIcon />
-              Chat on WhatsApp
+              Chat sur WhatsApp
             </a>
           </div>
 
@@ -126,7 +131,7 @@ export default function ContactSection() {
               <div className="text-center py-8">
                 <div className="text-5xl mb-4">✅</div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  Request Sent!
+                  Demande envoyée !
                 </h3>
                 <p className="text-slate-500">{siteConfig.contactForm.successMessage}</p>
               </div>
@@ -141,7 +146,7 @@ export default function ContactSection() {
                     value={form.name}
                     onChange={handleChange}
                     required
-                    placeholder="Your full name"
+                    placeholder="Votre nom complet"
                   />
                   <FormInput
                     label={siteConfig.contactForm.fields.phone}
@@ -173,7 +178,7 @@ export default function ContactSection() {
                     value={form.city}
                     onChange={handleChange}
                     required
-                    placeholder="e.g. Casablanca"
+                    placeholder="ex. Casablanca"
                   />
                 </div>
 
@@ -189,7 +194,7 @@ export default function ContactSection() {
                     onChange={handleChange}
                     className="border border-slate-200 rounded-xl px-4 py-2.5 text-sm text-slate-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent"
                   >
-                    <option value="">Select a service…</option>
+                    <option value="">Sélectionnez un service…</option>
                     {siteConfig.services.map((s) => (
                       <option key={s.id} value={s.name}>
                         {s.name}
@@ -217,7 +222,7 @@ export default function ContactSection() {
                     rows={3}
                     value={form.message}
                     onChange={handleChange}
-                    placeholder="Tell us more about your needs…"
+                    placeholder="Décrivez vos besoins…"
                     className="border border-slate-200 rounded-xl px-4 py-2.5 text-sm text-slate-700 resize-none focus:outline-none focus:ring-2 focus:border-transparent"
                   />
                 </div>
@@ -232,7 +237,7 @@ export default function ContactSection() {
                 </button>
 
                 <p className="text-center text-xs text-slate-400">
-                  Submitting this form will open WhatsApp with your details pre-filled.
+                  En soumettant ce formulaire, WhatsApp s&apos;ouvrira avec vos informations pré-remplies.
                 </p>
               </form>
             )}

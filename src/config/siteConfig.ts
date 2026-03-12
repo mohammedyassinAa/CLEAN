@@ -1,6 +1,6 @@
 /**
  * ============================================================
- * SITE CONFIGURATION FILE
+ * SITE CONFIGURATION FILE – Joud clean
  * ============================================================
  * Edit this file to customize all branding, contact details,
  * services, pricing, and content for the cleaning business.
@@ -9,25 +9,23 @@
 
 export const siteConfig = {
   // ----------------------------------------------------------
-  // TODO: Replace with the client's actual business name
+  // Business name
   // ----------------------------------------------------------
-  businessName: "SparkleClean Pro",
+  businessName: "Joud clean",
 
   // ----------------------------------------------------------
-  // TODO: Replace with the client's actual tagline
+  // Tagline
   // ----------------------------------------------------------
-  tagline: "Professional Cleaning Services",
+  tagline: "Services de nettoyage professionnels",
 
   // ----------------------------------------------------------
-  // TODO: Replace with the path to the client's logo file.
-  // Place the logo in /public/images/logo.png (or .svg).
+  // Logo: text-based logo rendered in-UI (no image file needed)
   // ----------------------------------------------------------
-  logoUrl: "/images/logo.png",
-  logoAlt: "SparkleClean Pro logo",
+  logoUrl: "",
+  logoAlt: "Joud clean logo",
 
   // ----------------------------------------------------------
-  // Brand colors (used throughout the site via CSS variables).
-  // TODO: Replace with client's brand colors.
+  // Brand colors
   // ----------------------------------------------------------
   colors: {
     primary: "#0ea5e9",      // sky-500 – main accent color
@@ -39,236 +37,218 @@ export const siteConfig = {
 
   // ----------------------------------------------------------
   // Contact & Location
-  // TODO: Replace all values below with real client data.
   // ----------------------------------------------------------
   contact: {
-    // Full international format, e.g. +212612345678
-    whatsapp: "+212600000000",
-    // Label shown on WhatsApp buttons
-    whatsappLabel: "Chat on WhatsApp",
-    phone: "+212600000000",
-    email: "contact@sparkleclean.ma",
-    // Physical address shown in footer & contact section
-    address: "123 Boulevard Hassan II, Casablanca, Morocco",
+    // Primary WhatsApp number – formatted for display.
+    // Used in wa.me links via .replace(/\D/g, '') to strip non-digits.
+    whatsapp: "+212 623-306290",
+    whatsappLabel: "Contacter sur WhatsApp",
+    // Secondary phone number
+    phone: "+212 649-033392",
+    email: "Paraouafik23@gmail.com",
+    address: "Casablanca quartier el inara rue 1 n37",
     city: "Casablanca",
-    // Regions / cities where the service is available
-    serviceAreas: ["Casablanca", "Rabat", "Mohammedia", "Salé"],
-    workingHours: "Monday – Saturday, 8:00 – 20:00",
+    serviceAreas: ["Casablanca", "Mohammedia", "Salé", "Rabat"],
+    workingHours: "7j/7 de 8h à 22h",
   },
 
   // ----------------------------------------------------------
   // Social media links
-  // TODO: Replace "#" with real profile URLs.
   // ----------------------------------------------------------
   social: {
     facebook: "#",
-    instagram: "#",
+    instagram: "https://www.instagram.com/pressing_ouafik",
     tiktok: "#",
     linkedin: "#",
   },
 
   // ----------------------------------------------------------
   // SEO / Meta
-  // TODO: Replace with real meta description and keywords.
   // ----------------------------------------------------------
   seo: {
-    title: "SparkleClean Pro – Professional Cleaning Services in Casablanca",
+    title: "Joud clean – Services de nettoyage professionnels à Casablanca",
     description:
-      "SparkleClean Pro offers professional residential and commercial cleaning services in Casablanca and surrounding areas. Request a free quote today.",
+      "Joud clean propose des services de nettoyage résidentiel et commercial professionnels à Casablanca. Pressing, nettoyage en profondeur, désinfection. Contactez-nous 7j/7 de 8h à 22h.",
     keywords:
-      "cleaning services, house cleaning, office cleaning, Casablanca, Morocco",
-    // Language / locale for the site (e.g. "en", "fr", "ar")
-    // TODO: Update to match the client's primary language (e.g. "fr" for French)
-    lang: "en",
-    // Open Graph locale (e.g. "en_US", "fr_FR", "ar_MA")
-    // TODO: Update to match the client's target market
-    ogLocale: "en_US",
+      "nettoyage, pressing, nettoyage maison, nettoyage bureau, Casablanca, Maroc, Joud clean",
+    lang: "fr",
+    ogLocale: "fr_FR",
   },
 
   // ----------------------------------------------------------
   // Hero section
-  // TODO: Update headline, subheadline, and CTA labels.
   // ----------------------------------------------------------
   hero: {
-    headline: "Spotless Spaces, Happy Places",
+    headline: "Un espace propre, une vie sereine",
     subheadline:
-      "Professional cleaning services for homes and businesses in Casablanca and surrounding areas. Trusted by hundreds of satisfied clients.",
-    ctaPrimary: "Get a Free Quote",
-    ctaSecondary: "Our Services",
-    // TODO: Replace with a real hero image in /public/images/hero.jpg
+      "Services de nettoyage et pressing professionnels à Casablanca. Disponibles 7j/7 de 8h à 22h. Des centaines de clients satisfaits nous font confiance.",
+    ctaPrimary: "Demander un devis",
+    ctaSecondary: "Nos services",
     backgroundImage: "/images/hero.jpg",
   },
 
   // ----------------------------------------------------------
   // Services list
-  // TODO: Replace names, descriptions, and prices with real data.
-  // Each service icon uses an emoji for now – replace or extend
-  // with an actual icon library if preferred.
   // ----------------------------------------------------------
   services: [
     {
       id: "residential",
       icon: "🏠",
-      name: "Residential Cleaning",
+      name: "Nettoyage Résidentiel",
       shortDescription:
-        "Thorough cleaning of apartments and villas. We handle every room so you can relax.",
-      basePrice: "From 350 MAD / visit",
-      period: "one-time or recurring",
+        "Nettoyage complet d'appartements et de villas. Nous prenons soin de chaque pièce pour que vous puissiez vous détendre.",
+      basePrice: "À partir de 350 MAD / passage",
+      period: "ponctuel ou régulier",
+    },
+    {
+      id: "pressing",
+      icon: "👔",
+      name: "Pressing",
+      shortDescription:
+        "Service de pressing et repassage professionnel. Vos vêtements et textiles rendus impeccables rapidement.",
+      basePrice: "À partir de 20 MAD / pièce",
+      period: "ponctuel",
     },
     {
       id: "office",
       icon: "🏢",
-      name: "Office & Commercial Cleaning",
+      name: "Nettoyage de Bureaux",
       shortDescription:
-        "Keep your workplace hygienic and professional. Flexible schedules to avoid disrupting your team.",
-      basePrice: "From 500 MAD / visit",
-      period: "daily, weekly, or monthly",
+        "Maintenez votre espace de travail propre et professionnel. Horaires flexibles pour ne pas perturber votre équipe.",
+      basePrice: "À partir de 500 MAD / passage",
+      period: "quotidien, hebdomadaire ou mensuel",
     },
     {
       id: "deep-clean",
       icon: "✨",
-      name: "Deep Cleaning",
+      name: "Nettoyage en Profondeur",
       shortDescription:
-        "Intensive top-to-bottom clean for move-ins, move-outs, or seasonal refreshes.",
-      basePrice: "From 800 MAD / session",
-      period: "one-time",
-    },
-    {
-      id: "post-construction",
-      icon: "🏗️",
-      name: "Post-Construction Cleaning",
-      shortDescription:
-        "Eliminate dust, debris, and residue left after renovation or construction work.",
-      basePrice: "From 1 200 MAD / session",
-      period: "one-time",
+        "Nettoyage intensif de fond en comble pour emménagements, déménagements ou remises à neuf saisonnières.",
+      basePrice: "À partir de 800 MAD / séance",
+      period: "ponctuel",
     },
     {
       id: "carpet-sofa",
       icon: "🛋️",
-      name: "Carpet & Upholstery Cleaning",
+      name: "Nettoyage Tapis & Canapés",
       shortDescription:
-        "Deep steam-cleaning for carpets, rugs, sofas, and mattresses.",
-      basePrice: "From 150 MAD / item",
-      period: "one-time",
+        "Nettoyage vapeur en profondeur pour tapis, moquettes, canapés et matelas.",
+      basePrice: "À partir de 150 MAD / pièce",
+      period: "ponctuel",
     },
     {
       id: "disinfection",
       icon: "🧴",
-      name: "Disinfection & Sanitization",
+      name: "Désinfection & Assainissement",
       shortDescription:
-        "Hospital-grade disinfection for homes, offices, and clinics using certified products.",
-      basePrice: "From 600 MAD / session",
-      period: "one-time or recurring",
+        "Désinfection de qualité professionnelle pour maisons, bureaux et cliniques avec des produits certifiés.",
+      basePrice: "À partir de 600 MAD / séance",
+      period: "ponctuel ou régulier",
     },
   ],
 
   // ----------------------------------------------------------
   // Pricing packages
-  // TODO: Adjust package names, features, and prices.
   // ----------------------------------------------------------
   packages: [
     {
       id: "basic",
-      name: "Starter",
-      description: "Ideal for small apartments or occasional cleaning needs.",
+      name: "Essentiel",
+      description: "Idéal pour les petits appartements ou les besoins ponctuels.",
       price: "350 MAD",
-      period: "per visit",
-      frequency: "one-time",
+      period: "par passage",
+      frequency: "ponctuel",
       features: [
-        "Up to 80 m²",
-        "Kitchen & bathrooms",
-        "Dusting & vacuuming",
-        "Floor mopping",
-        "Eco-friendly products",
+        "Jusqu'à 80 m²",
+        "Cuisine & salles de bain",
+        "Dépoussiérage & aspiration",
+        "Lavage des sols",
+        "Produits écologiques",
       ],
       highlighted: false,
-      cta: "Book Now",
+      cta: "Réserver",
     },
     {
       id: "standard",
-      name: "Weekly Plan",
-      description: "Perfect for busy families or small offices.",
+      name: "Plan Hebdomadaire",
+      description: "Parfait pour les familles actives ou les petits bureaux.",
       price: "1 200 MAD",
-      period: "per month",
-      frequency: "weekly (4 visits)",
+      period: "par mois",
+      frequency: "hebdomadaire (4 passages)",
       features: [
-        "Up to 150 m²",
-        "All rooms included",
-        "Kitchen & bathrooms",
-        "Window cleaning (interior)",
-        "Eco-friendly products",
-        "Dedicated cleaning team",
+        "Jusqu'à 150 m²",
+        "Toutes les pièces incluses",
+        "Cuisine & salles de bain",
+        "Nettoyage vitres (intérieur)",
+        "Produits écologiques",
+        "Équipe dédiée",
       ],
       highlighted: true,
-      cta: "Get Started",
+      cta: "Commencer",
     },
     {
       id: "premium",
-      name: "Monthly Contract",
-      description: "Best value for offices and large residences.",
+      name: "Contrat Mensuel",
+      description: "Meilleur rapport qualité-prix pour bureaux et grandes résidences.",
       price: "2 500 MAD",
-      period: "per month",
-      frequency: "3 visits/week",
+      period: "par mois",
+      frequency: "3 passages/semaine",
       features: [
-        "Unlimited area",
-        "All services included",
-        "Deep cleaning once a month",
-        "Carpet & upholstery cleaning",
-        "Priority scheduling",
-        "Dedicated account manager",
-        "Satisfaction guarantee",
+        "Surface illimitée",
+        "Tous les services inclus",
+        "Nettoyage en profondeur mensuel",
+        "Nettoyage tapis & canapés",
+        "Planification prioritaire",
+        "Responsable de compte dédié",
+        "Garantie satisfaction",
       ],
       highlighted: false,
-      cta: "Contact Us",
+      cta: "Nous contacter",
     },
   ],
 
   // ----------------------------------------------------------
   // About / Why Choose Us section
-  // TODO: Replace with real company story and key benefits.
   // ----------------------------------------------------------
   about: {
-    headline: "Why Thousands Trust SparkleClean Pro",
+    headline: "Pourquoi des centaines de clients nous font confiance",
     description:
-      "Founded in Casablanca, we have been delivering exceptional cleaning services since 2018. Our team of trained professionals uses eco-friendly products and modern equipment to ensure every space shines. We believe in transparent pricing, reliable scheduling, and a 100 % satisfaction guarantee.",
-    // TODO: Replace placeholder image path with actual photo
+      "Joud clean est votre partenaire de confiance pour un intérieur impeccable à Casablanca. Notre équipe de professionnels formés utilise des produits écologiques et un équipement moderne pour garantir un résultat parfait. Disponibles 7j/7 de 8h à 22h, nous nous adaptons à votre emploi du temps.",
     image: "/images/about.jpg",
-    imageAlt: "SparkleClean Pro team cleaning a modern office",
+    imageAlt: "Équipe Joud clean en train de nettoyer un bureau moderne",
     stats: [
-      { value: "500+", label: "Happy Clients" },
-      { value: "5 000+", label: "Cleanings Done" },
-      { value: "6+", label: "Years of Experience" },
-      { value: "100%", label: "Satisfaction Rate" },
+      { value: "500+", label: "Clients satisfaits" },
+      { value: "5 000+", label: "Nettoyages réalisés" },
+      { value: "7j/7", label: "Disponibilité" },
+      { value: "100%", label: "Satisfaction garantie" },
     ],
     benefits: [
       {
         icon: "🌿",
-        title: "Eco-Friendly Products",
-        description: "We use certified, environmentally safe cleaning products.",
+        title: "Produits Écologiques",
+        description: "Nous utilisons des produits de nettoyage certifiés et respectueux de l'environnement.",
       },
       {
         icon: "🛡️",
-        title: "Insured & Background-Checked",
-        description: "All our staff are fully insured and thoroughly vetted.",
+        title: "Personnel Vérifié",
+        description: "Tout notre personnel est soigneusement sélectionné et formé.",
       },
       {
         icon: "⏰",
-        title: "On-Time, Every Time",
+        title: "Ponctualité Garantie",
         description:
-          "We respect your schedule and guarantee punctual arrivals.",
+          "Nous respectons votre emploi du temps et garantissons des arrivées ponctuelles.",
       },
       {
         icon: "💰",
-        title: "Transparent Pricing",
-        description: "No hidden fees. The price we quote is the price you pay.",
+        title: "Tarifs Transparents",
+        description: "Aucun frais caché. Le prix annoncé est le prix payé.",
       },
     ],
   },
 
   // ----------------------------------------------------------
   // Testimonials
-  // TODO: Replace with real client testimonials. Get written
-  // permission from clients before publishing their names/photos.
   // ----------------------------------------------------------
   testimonials: [
     {
@@ -276,16 +256,15 @@ export const siteConfig = {
       name: "Fatima Z.",
       location: "Casablanca",
       rating: 5,
-      text: "Absolutely wonderful service! My apartment has never looked so clean. The team was professional, friendly, and finished ahead of schedule.",
-      // TODO: Replace with real client photo or remove if not available
+      text: "Service absolument remarquable ! Mon appartement n'a jamais été aussi propre. L'équipe était professionnelle, sympathique et a terminé en avance sur le planning.",
       avatar: null,
     },
     {
       id: 2,
       name: "Karim M.",
-      location: "Mohammedia",
+      location: "Casablanca",
       rating: 5,
-      text: "We use SparkleClean Pro for our office every week. Reliable, thorough, and competitively priced. Highly recommended!",
+      text: "Nous faisons appel à Joud clean pour notre bureau chaque semaine. Fiables, minutieux et à un tarif compétitif. Vivement recommandé !",
       avatar: null,
     },
     {
@@ -293,55 +272,54 @@ export const siteConfig = {
       name: "Nadia B.",
       location: "Casablanca",
       rating: 5,
-      text: "The post-construction cleaning was exceptional. They removed every trace of dust and left the apartment spotless. Will definitely hire again.",
+      text: "Le nettoyage du pressing était exceptionnel. Ils ont rendu mes vêtements impeccables. Je ferai certainement appel à eux de nouveau.",
       avatar: null,
     },
   ],
 
   // ----------------------------------------------------------
   // FAQ
-  // TODO: Update questions and answers with real client info.
   // ----------------------------------------------------------
   faq: [
     {
-      question: "What areas do you serve?",
+      question: "Quelles zones desservez-vous ?",
       answer:
-        "We currently serve Casablanca, Rabat, Mohammedia, and Salé. Contact us to check availability in your specific area.",
+        "Nous intervenons principalement à Casablanca (quartier el inara et environs) ainsi que dans les villes proches. Contactez-nous pour vérifier la disponibilité dans votre zone.",
     },
     {
-      question: "How do I book a cleaning?",
+      question: "Comment prendre rendez-vous ?",
       answer:
-        "Simply send us a WhatsApp message or fill out the contact form on this page. We will get back to you within a few hours to confirm your appointment.",
+        "Envoyez-nous simplement un message WhatsApp ou remplissez le formulaire de contact sur cette page. Nous vous répondons dans les plus brefs délais pour confirmer votre rendez-vous.",
     },
     {
-      question: "What products do you use?",
+      question: "Quels produits utilisez-vous ?",
       answer:
-        "We use eco-friendly, professionally certified cleaning products that are safe for children, pets, and the environment.",
+        "Nous utilisons des produits de nettoyage écologiques et certifiés, sans danger pour les enfants, les animaux et l'environnement.",
     },
     {
-      question: "Do I need to be home during the cleaning?",
+      question: "Dois-je être présent(e) pendant le nettoyage ?",
       answer:
-        "You don't have to be present, but you are welcome to stay. Many clients provide a spare key or door code after the first visit.",
+        "Votre présence n'est pas obligatoire, mais vous êtes le(la) bienvenu(e) si vous le souhaitez. De nombreux clients nous confient une clé ou un code d'accès après le premier passage.",
     },
     {
-      question: "How is the price calculated?",
+      question: "Comment le prix est-il calculé ?",
       answer:
-        "Pricing depends on the type of service, the size of the space, and the frequency. We provide a free, no-obligation quote before any work begins.",
+        "Le tarif dépend du type de service, de la superficie et de la fréquence. Nous fournissons un devis gratuit et sans engagement avant toute intervention.",
     },
     {
-      question: "What if I am not satisfied with the cleaning?",
+      question: "Et si je ne suis pas satisfait(e) du nettoyage ?",
       answer:
-        "Your satisfaction is our priority. If you are not happy with any aspect of the service, contact us within 24 hours and we will return to fix it at no extra charge.",
+        "Votre satisfaction est notre priorité. Si vous n'êtes pas satisfait(e), contactez-nous dans les 24 heures et nous reviendrons corriger le problème sans frais supplémentaires.",
     },
     {
-      question: "Do you bring your own equipment and supplies?",
+      question: "Apportez-vous votre propre matériel et produits ?",
       answer:
-        "Yes, our team arrives fully equipped with all tools and cleaning products needed. You don't need to provide anything.",
+        "Oui, notre équipe arrive avec tout le matériel et les produits nécessaires. Vous n'avez rien à fournir.",
     },
     {
-      question: "Can I cancel or reschedule my appointment?",
+      question: "Puis-je annuler ou reporter mon rendez-vous ?",
       answer:
-        "Yes, you can cancel or reschedule at no cost if you notify us at least 24 hours in advance.",
+        "Oui, vous pouvez annuler ou reporter sans frais en nous prévenant au moins 24 heures à l'avance.",
     },
   ],
 
@@ -349,21 +327,21 @@ export const siteConfig = {
   // Contact form fields configuration
   // ----------------------------------------------------------
   contactForm: {
-    headline: "Request a Free Quote",
+    headline: "Demandez un devis gratuit",
     subheadline:
-      "Fill in your details and we will get back to you within a few hours.",
+      "Remplissez vos coordonnées et nous vous recontactons dans les plus brefs délais.",
     fields: {
-      name: "Full Name",
-      phone: "Phone / WhatsApp",
-      email: "Email Address",
-      city: "City / Area",
-      service: "Type of Service",
-      date: "Preferred Date",
-      message: "Additional Details (optional)",
+      name: "Nom complet",
+      phone: "Téléphone / WhatsApp",
+      email: "Adresse e-mail",
+      city: "Ville / Quartier",
+      service: "Type de service",
+      date: "Date souhaitée",
+      message: "Informations complémentaires (facultatif)",
     },
-    submitLabel: "Send Request",
+    submitLabel: "Envoyer la demande",
     successMessage:
-      "Thank you! We have received your request and will contact you shortly.",
+      "Merci ! Nous avons bien reçu votre demande et vous contacterons très prochainement.",
   },
 } as const;
 

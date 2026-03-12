@@ -25,8 +25,7 @@ export default function AboutSection() {
             >
               <span className="text-7xl" role="img" aria-label="Cleaning team">🧹</span>
               <p className="text-white/80 text-sm font-medium px-8 text-center">
-                {/* TODO: Replace this placeholder with a real team photo */}
-                Photo of cleaning team will appear here
+                Photo de l&apos;équipe Joud clean
               </p>
             </div>
 
@@ -42,7 +41,7 @@ export default function AboutSection() {
               </div>
               <div>
                 <div className="text-sm font-bold text-slate-900">100% Satisfaction</div>
-                <div className="text-xs text-slate-400">Guaranteed or we return</div>
+                <div className="text-xs text-slate-400">Garanti ou nous revenons</div>
               </div>
             </div>
           </div>
@@ -53,7 +52,7 @@ export default function AboutSection() {
               className="text-sm font-semibold uppercase tracking-widest"
               style={{ color: siteConfig.colors.primary }}
             >
-              About Us
+              À propos de nous
             </span>
             <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mt-2 mb-5 leading-tight">
               {siteConfig.about.headline}
@@ -89,7 +88,7 @@ export default function AboutSection() {
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-semibold text-white transition-all duration-300 hover:opacity-90 hover:scale-105"
                 style={{ backgroundColor: siteConfig.colors.primary }}
               >
-                Request a Free Quote
+                Demandez un devis gratuit
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>

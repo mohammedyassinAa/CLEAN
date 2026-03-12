@@ -12,7 +12,7 @@ function CheckIcon() {
 
 function PricingCard({ pkg }: { pkg: Package }) {
   const whatsappNumber = siteConfig.contact.whatsapp.replace(/\D/g, "");
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Hello%2C%20I%20am%20interested%20in%20the%20${encodeURIComponent(pkg.name)}%20plan.`;
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20le%20forfait%20${encodeURIComponent(pkg.name)}.`;
 
   return (
     <div
@@ -32,7 +32,7 @@ function PricingCard({ pkg }: { pkg: Package }) {
       {/* Popular badge */}
       {pkg.highlighted && (
         <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-400 text-amber-900 text-xs font-bold px-4 py-1.5 rounded-full shadow-md">
-          ⭐ Most Popular
+          ⭐ Le plus populaire
         </div>
       )}
 
@@ -125,14 +125,13 @@ export default function PricingSection() {
             className="text-sm font-semibold uppercase tracking-widest"
             style={{ color: siteConfig.colors.primary }}
           >
-            Transparent Pricing
+            Tarifs Transparents
           </span>
           <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mt-2 mb-4">
-            Plans & Packages
+            Forfaits & Tarifs
           </h2>
           <p className="text-slate-500 max-w-xl mx-auto text-base md:text-lg">
-            Choose the plan that fits your needs. All plans include eco-friendly
-            products and our satisfaction guarantee.
+            Choisissez le forfait adapté à vos besoins. Tous les forfaits incluent des produits écologiques et notre garantie satisfaction.
           </p>
         </div>
 
@@ -145,9 +144,9 @@ export default function PricingSection() {
 
         {/* Note */}
         <p className="text-center text-slate-400 text-sm mt-10">
-          * Prices are indicative and may vary based on space size and specific requirements.{" "}
+          * Les prix sont indicatifs et peuvent varier selon la superficie et les exigences spécifiques.{" "}
           <a href="#contact" className="underline" style={{ color: siteConfig.colors.primary }}>
-            Request a custom quote.
+            Demandez un devis personnalisé.
           </a>
         </p>
       </div>

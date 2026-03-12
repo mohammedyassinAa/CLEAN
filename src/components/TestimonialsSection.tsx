@@ -62,14 +62,13 @@ export default function TestimonialsSection() {
             className="text-sm font-semibold uppercase tracking-widest"
             style={{ color: siteConfig.colors.primary }}
           >
-            Client Reviews
+            Avis Clients
           </span>
           <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mt-2 mb-4">
-            What Our Clients Say
+            Ce que disent nos clients
           </h2>
           <p className="text-slate-500 max-w-xl mx-auto text-base md:text-lg">
-            {/* TODO: Update with real number of verified reviews */}
-            Join hundreds of satisfied clients who trust us with their spaces.
+            Rejoignez des centaines de clients satisfaits qui nous confient leurs espaces.
           </p>
         </div>
 
@@ -82,10 +81,10 @@ export default function TestimonialsSection() {
 
         {/* Trust badges */}
         <div className="mt-14 flex flex-wrap items-center justify-center gap-8">
-          <TrustBadge icon="🔒" label="Fully Insured" />
-          <TrustBadge icon="🌿" label="Eco-Friendly Products" />
-          <TrustBadge icon="✅" label="Background-Checked Staff" />
-          <TrustBadge icon="⭐" label="5-Star Rated Service" />
+          <TrustBadge icon="🔒" label="Personnel vérifié" />
+          <TrustBadge icon="🌿" label="Produits écologiques" />
+          <TrustBadge icon="✅" label="Service de qualité" />
+          <TrustBadge icon="⭐" label="Service 5 étoiles" />
         </div>
       </div>
     </section>
