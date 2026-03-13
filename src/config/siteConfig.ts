@@ -84,7 +84,7 @@ export const siteConfig = {
       "Services de nettoyage et pressing professionnels à Casablanca. Disponibles 7j/7 de 8h à 22h. Des centaines de clients satisfaits nous font confiance.",
     ctaPrimary: "Demander un devis",
     ctaSecondary: "Nos services",
-    backgroundImage: "/images/hero.jpg",
+    backgroundImage: "/logo.png",
   },
 
   // ----------------------------------------------------------
@@ -92,57 +92,48 @@ export const siteConfig = {
   // ----------------------------------------------------------
   services: [
     {
-      id: "residential",
-      icon: "🏠",
-      name: "Nettoyage Résidentiel",
+      id: "fin-de-chantier",
+      icon: "🏗️",
+      name: "Nettoyage fin de chantier",
       shortDescription:
-        "Nettoyage complet d'appartements et de villas. Nous prenons soin de chaque pièce pour que vous puissiez vous détendre.",
+        "Nettoyage complet après travaux : élimination des poussières, résidus de plâtre et débris pour rendre vos locaux impeccables.",
+      basePrice: "Sur devis",
+      period: "ponctuel",
+    },
+    {
+      id: "vitres-facades",
+      icon: "🪟",
+      name: "Nettoyage vitres et facades",
+      shortDescription:
+        "Nettoyage professionnel de vitres, baies vitrées et façades d'immeubles pour une brillance durable.",
+      basePrice: "Sur devis",
+      period: "ponctuel ou régulier",
+    },
+    {
+      id: "femmes-de-menage",
+      icon: "🧹",
+      name: "Femmes de ménage",
+      shortDescription:
+        "Agents de ménage qualifiées pour l'entretien régulier de votre domicile ou bureau. Disponibles 7j/7.",
       basePrice: "À partir de 350 MAD / passage",
       period: "ponctuel ou régulier",
     },
     {
-      id: "pressing",
-      icon: "👔",
-      name: "Pressing",
-      shortDescription:
-        "Service de pressing et repassage professionnel. Vos vêtements et textiles rendus impeccables rapidement.",
-      basePrice: "À partir de 20 MAD / pièce",
-      period: "ponctuel",
-    },
-    {
-      id: "office",
-      icon: "🏢",
-      name: "Nettoyage de Bureaux",
-      shortDescription:
-        "Maintenez votre espace de travail propre et professionnel. Horaires flexibles pour ne pas perturber votre équipe.",
-      basePrice: "À partir de 500 MAD / passage",
-      period: "quotidien, hebdomadaire ou mensuel",
-    },
-    {
-      id: "deep-clean",
-      icon: "✨",
-      name: "Nettoyage en Profondeur",
-      shortDescription:
-        "Nettoyage intensif de fond en comble pour emménagements, déménagements ou remises à neuf saisonnières.",
-      basePrice: "À partir de 800 MAD / séance",
-      period: "ponctuel",
-    },
-    {
-      id: "carpet-sofa",
+      id: "tapis-moquettes",
       icon: "🛋️",
-      name: "Nettoyage Tapis & Canapés",
+      name: "Nettoyage tapis et moquettes",
       shortDescription:
-        "Nettoyage vapeur en profondeur pour tapis, moquettes, canapés et matelas.",
+        "Nettoyage vapeur en profondeur pour tapis, moquettes et revêtements de sol textiles.",
       basePrice: "À partir de 150 MAD / pièce",
       period: "ponctuel",
     },
     {
-      id: "disinfection",
-      icon: "🧴",
-      name: "Désinfection & Assainissement",
+      id: "deratisation",
+      icon: "🦟",
+      name: "Dératisation, désinsectisation et antiparasites",
       shortDescription:
-        "Désinfection de qualité professionnelle pour maisons, bureaux et cliniques avec des produits certifiés.",
-      basePrice: "À partir de 600 MAD / séance",
+        "Traitement professionnel contre les nuisibles : rats, insectes et parasites, avec des produits homologués.",
+      basePrice: "Sur devis",
       period: "ponctuel ou régulier",
     },
   ],

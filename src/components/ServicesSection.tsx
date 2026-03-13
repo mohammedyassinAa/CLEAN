@@ -51,7 +51,7 @@ export default function ServicesSection() {
             Nos Services de Nettoyage
           </h2>
           <p className="text-slate-500 max-w-xl mx-auto text-base md:text-lg">
-            Du nettoyage résidentiel régulier au pressing et au nettoyage commercial spécialisé — nous avons ce qu&apos;il vous faut.
+            Du nettoyage fin de chantier à la dératisation — des prestations professionnelles adaptées à tous vos besoins.
           </p>
         </div>
 

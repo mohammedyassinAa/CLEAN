@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { siteConfig } from "@/config/siteConfig";
 
 export default function HeroSection() {
@@ -9,28 +10,24 @@ export default function HeroSection() {
       id="hero"
       className="relative min-h-screen flex items-center justify-center text-white overflow-hidden"
     >
-      {/* Background gradient overlay */}
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          background: `linear-gradient(135deg, ${siteConfig.colors.primaryDark} 0%, ${siteConfig.colors.primary} 60%, ${siteConfig.colors.secondary} 100%)`,
-        }}
-      />
-
-      {/* TODO: Replace the gradient with a real hero background image:
-           1. Add your hero image to /public/images/hero.jpg
-           2. Uncomment the block below and remove the gradient div above
-
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `url(${siteConfig.hero.backgroundImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      />
-      <div className="absolute inset-0 z-0 bg-black/55" />
-      */}
+      {/* Background: nettoyage photo */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src={siteConfig.hero.backgroundImage}
+          alt="Nettoyage professionnel Casablanca"
+          fill
+          priority
+          style={{ objectFit: "cover", objectPosition: "center" }}
+          sizes="100vw"
+        />
+        {/* Gradient overlay for text readability */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: "linear-gradient(135deg, rgba(2,132,199,0.88) 0%, rgba(14,165,233,0.69) 60%, rgba(16,185,129,0.56) 100%)",
+          }}
+        />
+      </div>
 
       {/* Decorative blobs */}
       <div className="absolute top-20 right-10 w-64 h-64 rounded-full opacity-20 blur-3xl bg-white hidden lg:block" />
