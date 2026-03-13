@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="carpetbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef9f0"/>
+      <stop offset="100%" stop-color="#fef3c7"/>
+    </linearGradient>
+    <pattern id="carpetPattern" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <rect width="30" height="30" fill="#c7a252"/>
+      <rect x="2" y="2" width="26" height="26" fill="#d4a95a" rx="1"/>
+      <circle cx="15" cy="15" r="4" fill="#b8862e" opacity="0.6"/>
+      <line x1="0" y1="15" x2="30" y2="15" stroke="#b8862e" stroke-width="0.5" opacity="0.4"/>
+      <line x1="15" y1="0" x2="15" y2="30" stroke="#b8862e" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+  </defs>
+  <!-- Room background -->
+  <rect width="400" height="300" fill="url(#carpetbg)"/>
+  <!-- Floor under carpet -->
+  <rect y="200" width="400" height="100" fill="#e2e8f0"/>
+  <!-- Carpet (upper half already cleaned) -->
+  <rect x="30" y="100" width="340" height="160" fill="#6b7280" rx="8"/>
+  <!-- Dirty part of carpet (lower) -->
+  <rect x="30" y="160" width="340" height="100" fill="url(#carpetPattern)" rx="0 0 8 8"/>
+  <!-- Clean part of carpet (upper – with steam effect) -->
+  <rect x="30" y="100" width="340" height="65" fill="#c8a04a" rx="8 8 0 0" opacity="0.9"/>
+  <!-- Clean sheen on upper carpet -->
+  <rect x="30" y="100" width="340" height="30" fill="white" rx="8 8 0 0" opacity="0.2"/>
+  <!-- Dividing line (cleaned vs dirty) -->
+  <rect x="30" y="160" width="340" height="4" fill="#fbbf24" opacity="0.8"/>
+  <!-- Steam / vapour coming from cleaned area -->
+  <path d="M100 145 Q95 130 105 118 Q115 106 110 95" stroke="white" stroke-width="3" fill="none" opacity="0.6" stroke-linecap="round"/>
+  <path d="M160 148 Q155 133 165 121 Q175 109 170 98" stroke="white" stroke-width="3" fill="none" opacity="0.5" stroke-linecap="round"/>
+  <path d="M220 145 Q215 130 225 118 Q235 106 230 95" stroke="white" stroke-width="3" fill="none" opacity="0.6" stroke-linecap="round"/>
+  <path d="M280 148 Q275 133 285 121 Q295 109 290 98" stroke="white" stroke-width="3" fill="none" opacity="0.5" stroke-linecap="round"/>
+  <!-- Industrial carpet cleaner machine -->
+  <rect x="155" y="155" width="90" height="60" fill="#374151" rx="6"/>
+  <rect x="160" y="160" width="80" height="25" fill="#4b5563" rx="4"/>
+  <!-- Machine tank -->
+  <ellipse cx="200" cy="163" rx="28" ry="10" fill="#60a5fa" opacity="0.8"/>
+  <!-- Handle -->
+  <rect x="196" y="110" width="8" height="50" fill="#6b7280" rx="4"/>
+  <rect x="180" y="110" width="40" height="8" fill="#374151" rx="4"/>
+  <!-- Wheels -->
+  <circle cx="168" cy="215" r="9" fill="#1f2937"/>
+  <circle cx="168" cy="215" r="4" fill="#6b7280"/>
+  <circle cx="232" cy="215" r="9" fill="#1f2937"/>
+  <circle cx="232" cy="215" r="4" fill="#6b7280"/>
+  <!-- Dirty spots on un-cleaned carpet -->
+  <circle cx="100" cy="195" r="8" fill="#78350f" opacity="0.4"/>
+  <circle cx="330" cy="210" r="6" fill="#78350f" opacity="0.35"/>
+  <circle cx="75" cy="220" r="5" fill="#78350f" opacity="0.3"/>
+  <!-- Bottom label -->
+  <rect y="268" width="400" height="32" fill="#0284c7" opacity="0.9"/>
+  <text x="200" y="289" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Tapis &amp; Moquettes</text>
+</svg>

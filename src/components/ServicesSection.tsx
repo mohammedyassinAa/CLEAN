@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { siteConfig } from "@/config/siteConfig";
 
 type Service = (typeof siteConfig.services)[number];
@@ -7,32 +8,38 @@ function ServiceCard({ service }: { service: Service }) {
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20votre%20service%20${encodeURIComponent(service.name)}.`;
 
   return (
-    <div className="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-6 flex flex-col">
-      {/* Icon */}
-      <div
-        className="w-14 h-14 rounded-xl flex items-center justify-center text-2xl mb-5 transition-transform duration-300 group-hover:scale-110"
-        style={{ backgroundColor: `${siteConfig.colors.primary}15` }}
-      >
-        <span role="img" aria-label={service.name}>{service.icon}</span>
+    <div className="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden flex flex-col">
+      {/* Service image */}
+      <div className="relative w-full aspect-[4/3] overflow-hidden">
+        <Image
+          src={service.image}
+          alt={service.name}
+          fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          style={{ objectFit: "cover" }}
+          className="transition-transform duration-300 group-hover:scale-105"
+        />
       </div>
 
       {/* Content */}
-      <h3 className="text-lg font-bold text-slate-900 mb-2">{service.name}</h3>
-      <p className="text-slate-500 text-sm leading-relaxed flex-1 mb-5">
-        {service.shortDescription}
-      </p>
+      <div className="p-6 flex flex-col flex-1">
+        <h3 className="text-lg font-bold text-slate-900 mb-2">{service.name}</h3>
+        <p className="text-slate-500 text-sm leading-relaxed flex-1 mb-5">
+          {service.shortDescription}
+        </p>
 
-      {/* CTA */}
-      <div className="mt-auto pt-4 border-t border-slate-100 flex justify-center">
-        <a
-          href={whatsappUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-sm font-semibold px-5 py-2 rounded-full text-white transition-all duration-200 hover:opacity-90 hover:scale-105"
-          style={{ backgroundColor: siteConfig.colors.primary }}
-        >
-          Réserver
-        </a>
+        {/* CTA */}
+        <div className="mt-auto pt-4 border-t border-slate-100 flex justify-center">
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-semibold px-5 py-2 rounded-full text-white transition-all duration-200 hover:opacity-90 hover:scale-105"
+            style={{ backgroundColor: siteConfig.colors.primary }}
+          >
+            Réserver
+          </a>
+        </div>
       </div>
     </div>
   );

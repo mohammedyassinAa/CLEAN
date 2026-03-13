@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { siteConfig } from "@/config/siteConfig";
 
 const navLinks = [
@@ -44,10 +45,14 @@ export default function Footer() {
         {/* Brand column */}
         <div className="lg:col-span-1">
           <div className="flex items-center gap-2.5 mb-4">
-            <FooterLogoMark />
-            <span className="font-extrabold text-xl tracking-tight text-white">
-              Joud<span className="font-light text-sky-400 ml-1">clean</span>
-            </span>
+            <Image
+              src="/logo.png"
+              alt={siteConfig.logoAlt}
+              height={38}
+              width={68}
+              style={{ height: "38px", width: "auto" }}
+              className="rounded-sm object-contain"
+            />
           </div>
           <p className="text-slate-400 text-sm leading-relaxed mb-5">
             {siteConfig.about.description.slice(0, 120)}…
@@ -193,38 +198,6 @@ function FooterContact({ icon, text }: { icon: string; text: string }) {
       <span className="flex-shrink-0 mt-0.5">{icon}</span>
       <span>{text}</span>
     </li>
-  );
-}
-
-function FooterLogoMark() {
-  return (
-    <svg
-      width="38"
-      height="38"
-      viewBox="0 0 38 38"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-    >
-      <defs>
-        <linearGradient id="joud-footer-logo-bg" x1="0" y1="0" x2="38" y2="38" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#0284c7" />
-          <stop offset="1" stopColor="#10b981" />
-        </linearGradient>
-      </defs>
-      <rect width="38" height="38" rx="10" fill="url(#joud-footer-logo-bg)" />
-      <ellipse cx="14" cy="10" rx="9" ry="5" fill="white" fillOpacity="0.13" />
-      <path
-        d="M22.5 9H19.5V24.5C19.5 26.985 17.71 29 15 29C12.29 29 10.5 26.985 10.5 24.5H13.5C13.5 25.328 14.172 26 15 26C15.828 26 16.5 25.328 16.5 24.5V9H13.5V6H22.5V9Z"
-        fill="white"
-      />
-      <path
-        d="M30.5 7 L31.4 9.6 L34 10.5 L31.4 11.4 L30.5 14 L29.6 11.4 L27 10.5 L29.6 9.6Z"
-        fill="white"
-        fillOpacity="0.85"
-      />
-      <circle cx="8" cy="30.5" r="2" fill="white" fillOpacity="0.3" />
-    </svg>
   );
 }
 

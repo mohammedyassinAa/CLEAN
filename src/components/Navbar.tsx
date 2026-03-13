@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { siteConfig } from "@/config/siteConfig";
 
 const navLinks = [
@@ -33,21 +34,17 @@ export default function Navbar() {
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="#hero" className="flex items-center gap-2.5" onClick={handleNavClick}>
-          <LogoMark />
-          <span
-            className={`font-extrabold text-xl tracking-tight transition-colors duration-300 ${
-              scrolled ? "text-slate-900" : "text-white"
-            }`}
-          >
-            <span>Joud</span>
-            <span
-              className={`font-light ml-1 transition-colors duration-300 ${
-                scrolled ? "text-sky-500" : "text-sky-200"
-              }`}
-            >
-              clean
-            </span>
-          </span>
+          <div className={`relative h-10 w-auto transition-all duration-300 ${scrolled ? "" : "drop-shadow-md"}`}>
+            <Image
+              src="/logo.png"
+              alt={siteConfig.logoAlt}
+              height={40}
+              width={71}
+              style={{ height: "40px", width: "auto" }}
+              priority
+              className="rounded-sm object-contain"
+            />
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
@@ -117,47 +114,6 @@ export default function Navbar() {
         </div>
       )}
     </header>
-  );
-}
-
-function LogoMark() {
-  return (
-    <svg
-      width="40"
-      height="40"
-      viewBox="0 0 40 40"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-    >
-      <defs>
-        <linearGradient id="joud-logo-bg" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#0284c7" />
-          <stop offset="1" stopColor="#10b981" />
-        </linearGradient>
-        <linearGradient id="joud-shine" x1="0" y1="0" x2="40" y2="20" gradientUnits="userSpaceOnUse">
-          <stop stopColor="white" stopOpacity="0.25" />
-          <stop offset="1" stopColor="white" stopOpacity="0" />
-        </linearGradient>
-      </defs>
-      {/* Rounded square background */}
-      <rect width="40" height="40" rx="11" fill="url(#joud-logo-bg)" />
-      {/* Shine overlay */}
-      <rect width="40" height="40" rx="11" fill="url(#joud-shine)" />
-      {/* Stylised "J" letter */}
-      <path
-        d="M12 6H26V9H22V26C22 30 18 33 15 31C12 29 11 27 11 25H14C14 26 15 28 16 28C18 28 19 27 19 26V9H12Z"
-        fill="white"
-      />
-      {/* 4-point sparkle – top right */}
-      <path
-        d="M31 9L31.8 11.2L34 12L31.8 12.8L31 15L30.2 12.8L28 12L30.2 11.2Z"
-        fill="white"
-        fillOpacity="0.9"
-      />
-      {/* Small dot accent – bottom left */}
-      <circle cx="8.5" cy="32" r="2.5" fill="white" fillOpacity="0.35" />
-    </svg>
   );
 }
 

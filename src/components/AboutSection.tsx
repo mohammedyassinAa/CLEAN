@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { siteConfig } from "@/config/siteConfig";
 
 export default function AboutSection() {
@@ -7,26 +8,15 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image / visual side */}
           <div className="relative">
-            {/* TODO: Replace this placeholder with an actual <Image> component once
-                    the client provides a photo. Example:
-                    <Image
-                      src={siteConfig.about.image}
-                      alt={siteConfig.about.imageAlt}
-                      width={600}
-                      height={450}
-                      className="rounded-2xl shadow-xl object-cover"
-                    />
-            */}
-            <div
-              className="w-full aspect-[4/3] rounded-2xl flex flex-col items-center justify-center gap-4 shadow-xl text-white"
-              style={{
-                background: `linear-gradient(135deg, ${siteConfig.colors.primaryDark}, ${siteConfig.colors.primary})`,
-              }}
-            >
-              <span className="text-7xl" role="img" aria-label="Cleaning team">🧹</span>
-              <p className="text-white/80 text-sm font-medium px-8 text-center">
-                Photo de l&apos;équipe Joud clean
-              </p>
+            <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl bg-slate-100">
+              <Image
+                src="/logo.png"
+                alt="Joud clean – logo et identité visuelle"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                style={{ objectFit: "cover", objectPosition: "center" }}
+                className="rounded-2xl"
+              />
             </div>
 
             {/* Floating badge */}
