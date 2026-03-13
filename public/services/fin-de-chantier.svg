@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#bae6fd"/>
+    </linearGradient>
+    <linearGradient id="building" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+  </defs>
+  <!-- Sky background -->
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- Ground -->
+  <rect y="240" width="400" height="60" fill="#d1fae5"/>
+  <!-- Building -->
+  <rect x="120" y="70" width="160" height="170" fill="url(#building)" rx="4"/>
+  <!-- Windows grid -->
+  <rect x="140" y="90" width="35" height="30" fill="#bfdbfe" rx="3"/>
+  <rect x="190" y="90" width="35" height="30" fill="#bfdbfe" rx="3"/>
+  <rect x="225" y="90" width="35" height="30" fill="#bfdbfe" rx="3"/>
+  <rect x="140" y="135" width="35" height="30" fill="#93c5fd" rx="3"/>
+  <rect x="190" y="135" width="35" height="30" fill="#bfdbfe" rx="3"/>
+  <rect x="225" y="135" width="35" height="30" fill="#93c5fd" rx="3"/>
+  <!-- Door -->
+  <rect x="175" y="200" width="50" height="40" fill="#475569" rx="3"/>
+  <!-- Cleaning worker with mop -->
+  <circle cx="75" cy="175" r="16" fill="#fbbf24"/>
+  <rect x="67" y="191" width="16" height="35" fill="#0284c7" rx="4"/>
+  <!-- Mop handle -->
+  <rect x="78" y="178" width="4" height="55" fill="#92400e" rx="2"/>
+  <!-- Mop head -->
+  <ellipse cx="80" cy="236" rx="14" ry="7" fill="#e2e8f0"/>
+  <!-- Dust particles -->
+  <circle cx="100" cy="220" r="3" fill="#94a3b8" opacity="0.6"/>
+  <circle cx="110" cy="230" r="2" fill="#94a3b8" opacity="0.5"/>
+  <circle cx="95" cy="235" r="2" fill="#94a3b8" opacity="0.4"/>
+  <!-- Bucket -->
+  <rect x="50" y="222" width="22" height="18" fill="#0ea5e9" rx="3"/>
+  <path d="M50 222 Q61 216 72 222" stroke="#0369a1" stroke-width="2" fill="none"/>
+  <!-- Hard hat -->
+  <ellipse cx="75" cy="160" rx="18" ry="8" fill="#facc15"/>
+  <rect x="58" y="158" width="34" height="8" fill="#fbbf24" rx="1"/>
+</svg>
