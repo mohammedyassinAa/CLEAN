@@ -123,36 +123,40 @@ export default function Navbar() {
 function LogoMark() {
   return (
     <svg
-      width="38"
-      height="38"
-      viewBox="0 0 38 38"
+      width="40"
+      height="40"
+      viewBox="0 0 40 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
     >
       <defs>
-        <linearGradient id="joud-logo-bg" x1="0" y1="0" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+        <linearGradient id="joud-logo-bg" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
           <stop stopColor="#0284c7" />
           <stop offset="1" stopColor="#10b981" />
         </linearGradient>
+        <linearGradient id="joud-shine" x1="0" y1="0" x2="40" y2="20" gradientUnits="userSpaceOnUse">
+          <stop stopColor="white" stopOpacity="0.25" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
+        </linearGradient>
       </defs>
       {/* Rounded square background */}
-      <rect width="38" height="38" rx="10" fill="url(#joud-logo-bg)" />
-      {/* Soft inner highlight */}
-      <ellipse cx="14" cy="10" rx="9" ry="5" fill="white" fillOpacity="0.13" />
-      {/* Stylised letter J */}
+      <rect width="40" height="40" rx="11" fill="url(#joud-logo-bg)" />
+      {/* Shine overlay */}
+      <rect width="40" height="40" rx="11" fill="url(#joud-shine)" />
+      {/* Stylised "J" letter */}
       <path
-        d="M22.5 9H19.5V24.5C19.5 26.985 17.71 29 15 29C12.29 29 10.5 26.985 10.5 24.5H13.5C13.5 25.328 14.172 26 15 26C15.828 26 16.5 25.328 16.5 24.5V9H13.5V6H22.5V9Z"
+        d="M12 6H26V9H22V26C22 30 18 33 15 31C12 29 11 27 11 25H14C14 26 15 28 16 28C18 28 19 27 19 26V9H12Z"
         fill="white"
       />
-      {/* 4-point sparkle top-right */}
+      {/* 4-point sparkle – top right */}
       <path
-        d="M30.5 7 L31.4 9.6 L34 10.5 L31.4 11.4 L30.5 14 L29.6 11.4 L27 10.5 L29.6 9.6Z"
+        d="M31 9L31.8 11.2L34 12L31.8 12.8L31 15L30.2 12.8L28 12L30.2 11.2Z"
         fill="white"
-        fillOpacity="0.85"
+        fillOpacity="0.9"
       />
-      {/* Small bubble accent bottom-left */}
-      <circle cx="8" cy="30.5" r="2" fill="white" fillOpacity="0.3" />
+      {/* Small dot accent – bottom left */}
+      <circle cx="8.5" cy="32" r="2.5" fill="white" fillOpacity="0.35" />
     </svg>
   );
 }
