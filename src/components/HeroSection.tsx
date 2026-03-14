@@ -35,15 +35,16 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-24 text-center">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm border border-white/30 text-white text-sm font-medium px-4 py-2 rounded-full mb-6">
-          <span>Joud clean</span>
-        </div>
-
-        {/* Headline */}
+         {/* Headline */}
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 drop-shadow-sm">
           {siteConfig.hero.headline}
         </h1>
+        {/* Badge */}
+        <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm border border-white/30 text-white text-sm font-medium px-4 py-2 rounded-full mb-6">
+          <span>Nettoyage professionnel</span>
+        </div>
+
+       
 
         {/* Subheadline */}
         <p className="text-lg md:text-xl lg:text-2xl text-white/90 max-w-2xl mx-auto mb-10 leading-relaxed">

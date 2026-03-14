@@ -79,7 +79,7 @@ export const siteConfig = {
   // Hero section
   // ----------------------------------------------------------
   hero: {
-    headline: "Nettoyage professionnel",
+    headline: "Joud clean",
     subheadline:
       "nous intervenons avec rigueur, précision et des protocoles validés pour un espace parfaitement propre et sain",
     ctaPrimary: "Demander un devis",
