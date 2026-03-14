@@ -37,8 +37,7 @@ export default function HeroSection() {
       <div className="relative z-10 container mx-auto px-4 py-24 text-center">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm border border-white/30 text-white text-sm font-medium px-4 py-2 rounded-full mb-6">
-          <span>⭐</span>
-          <span>Plus de 500 clients satisfaits à Casablanca</span>
+          <span>Joud clean</span>
         </div>
 
         {/* Headline */}
@@ -75,15 +74,6 @@ export default function HeroSection() {
           </a>
         </div>
 
-        {/* Trust indicators */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
-          {siteConfig.about.stats.map((stat) => (
-            <div key={stat.label} className="text-center">
-              <div className="text-3xl font-extrabold">{stat.value}</div>
-              <div className="text-sm text-white/80 mt-1">{stat.label}</div>
-            </div>
-          ))}
-        </div>
       </div>
 
       {/* Wave divider */}
