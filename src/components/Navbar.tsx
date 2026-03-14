@@ -36,7 +36,7 @@ export default function Navbar() {
         <Link href="#hero" className="flex items-center gap-3" onClick={handleNavClick}>
           <div className={`relative flex-shrink-0 transition-all duration-300 ${scrolled ? "" : "drop-shadow-md"}`}>
             <Image
-              src="/logo.png"
+              src="/navbarlogo.png"
               alt={siteConfig.logoAlt}
               height={44}
               width={44}
