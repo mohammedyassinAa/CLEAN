@@ -79,7 +79,8 @@ export const siteConfig = {
   // Hero section
   // ----------------------------------------------------------
   hero: {
-    headline: "Joud clean",
+    badge: "Joud clean",
+    headline: "Nettoyage professionnel",
     subheadline:
       "nous intervenons avec rigueur, précision et des protocoles validés pour un espace parfaitement propre et sain",
     ctaPrimary: "Demander un devis",
