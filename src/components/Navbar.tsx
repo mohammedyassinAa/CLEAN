@@ -35,17 +35,17 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="#hero" className="flex items-center group" onClick={handleNavClick}>
           <div
-            className={`relative flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-lg overflow-hidden bg-white ring-2 ring-white/70 shadow-lg transition-all duration-300 motion-safe:group-hover:scale-110 group-hover:ring-white group-hover:shadow-xl ${
+            className={`flex-shrink-0 rounded-lg overflow-hidden bg-white ring-2 ring-white/70 shadow-lg transition-all duration-300 motion-safe:group-hover:scale-110 group-hover:ring-white group-hover:shadow-xl ${
               scrolled ? "ring-sky-200 shadow-md" : "drop-shadow-lg"
             }`}
           >
             <Image
               src="/navbarlogo.svg"
               alt={siteConfig.logoAlt}
-              fill
-              sizes="(max-width: 768px) 40px, 48px"
+              width={68}
+              height={38}
               priority
-              className="object-contain"
+              className="h-[38px] w-auto object-contain"
             />
           </div>
         </Link>
