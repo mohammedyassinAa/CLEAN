@@ -46,7 +46,7 @@ export default function Footer() {
         <div className="lg:col-span-1">
           <div className="flex items-center gap-2.5 mb-4">
             <Image
-              src="/logo.png"
+              src="/navbarlogo.svg"
               alt={siteConfig.logoAlt}
               height={38}
               width={68}
