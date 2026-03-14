@@ -33,7 +33,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
-        <Link href="#hero" className="flex items-center gap-3" onClick={handleNavClick}>
+        <Link href="#hero" className="flex items-center" onClick={handleNavClick}>
           <div className={`relative flex-shrink-0 transition-all duration-300 ${scrolled ? "" : "drop-shadow-md"}`}>
             <Image
               src="/navbarlogo.png"
@@ -43,22 +43,6 @@ export default function Navbar() {
               priority
               className="rounded-xl object-contain"
             />
-          </div>
-          <div className="flex flex-col leading-tight">
-            <span
-              className={`text-lg font-extrabold tracking-tight transition-colors duration-300 ${
-                scrolled ? "text-slate-900" : "text-white drop-shadow"
-              }`}
-            >
-              Joud<span style={{ color: siteConfig.colors.primary }}>clean</span>
-            </span>
-            <span
-              className={`text-[10px] font-medium tracking-widest uppercase transition-colors duration-300 ${
-                scrolled ? "text-slate-400" : "text-white/70"
-              }`}
-            >
-              Nettoyage Pro
-            </span>
           </div>
         </Link>
 
