@@ -79,9 +79,9 @@ export const siteConfig = {
   // Hero section
   // ----------------------------------------------------------
   hero: {
-    headline: "Un espace propre, une vie sereine",
+    headline: "Nettoyage professionnel",
     subheadline:
-      "Services de nettoyage et pressing professionnels à Casablanca. Disponibles 7j/7 de 8h à 22h. Des centaines de clients satisfaits nous font confiance.",
+      "nous intervenons avec rigueur, précision et des protocoles validés pour un espace parfaitement propre et sain",
     ctaPrimary: "Demander un devis",
     ctaSecondary: "Nos services",
     backgroundImage: "/logo.png",
@@ -91,6 +91,16 @@ export const siteConfig = {
   // Services list
   // ----------------------------------------------------------
   services: [
+    {
+      id: "canape-matelas",
+      icon: "🛋️",
+      image: "/nonettoyagecanapeetmatelas.jfif",
+      name: "nettoyage canape et matelas",
+      shortDescription:
+        "nous offrons un nettoyage profond pour les canape et matelas avec desinfection et sterilisation et traitement des acariens avec sechage et service garantie a 100%",
+      basePrice: "Sur devis",
+      period: "ponctuel",
+    },
     {
       id: "fin-de-chantier",
       icon: "🏗️",
