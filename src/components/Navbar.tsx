@@ -35,7 +35,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="#hero" className="flex items-center group" onClick={handleNavClick}>
           <div
-            className={`relative flex-shrink-0 w-16 h-16 md:w-24 md:h-24 rounded-full overflow-hidden ring-2 ring-white/70 shadow-lg transition-all duration-300 motion-safe:group-hover:scale-110 group-hover:ring-white group-hover:shadow-xl ${
+            className={`relative flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden ring-2 ring-white/70 shadow-lg transition-all duration-300 motion-safe:group-hover:scale-110 group-hover:ring-white group-hover:shadow-xl ${
               scrolled ? "ring-sky-200 shadow-md" : "drop-shadow-lg"
             }`}
           >
@@ -43,7 +43,7 @@ export default function Navbar() {
               src="/navbarlogo.png"
               alt={siteConfig.logoAlt}
               fill
-              sizes="(max-width: 768px) 64px, 96px"
+              sizes="(max-width: 768px) 40px, 48px"
               priority
               className="rounded-full object-contain"
             />
