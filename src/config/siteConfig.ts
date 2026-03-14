@@ -96,7 +96,7 @@ export const siteConfig = {
       id: "canape-matelas",
       icon: "🛋️",
       image: "/nonettoyagecanapeetmatelas.jfif",
-      name: "nettoyage canape et matelas",
+      name: "Nettoyage canape et matelas",
       shortDescription:
         "nous offrons un nettoyage profond pour les canape et matelas avec desinfection et sterilisation et traitement des acariens avec sechage et service garantie a 100%",
       basePrice: "Sur devis",
