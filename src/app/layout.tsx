@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { siteConfig } from "@/config/siteConfig";
+import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
 
 export const metadata: Metadata = {
   title: siteConfig.seo.title,
@@ -24,6 +25,7 @@ export default function RootLayout({
     <html lang={siteConfig.seo.lang} className="scroll-smooth">
       <body className="antialiased bg-white text-slate-900">
         {children}
+        <WhatsAppFloatingButton />
       </body>
     </html>
   );

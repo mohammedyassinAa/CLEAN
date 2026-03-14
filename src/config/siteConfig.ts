@@ -94,7 +94,7 @@ export const siteConfig = {
     {
       id: "fin-de-chantier",
       icon: "🏗️",
-      image: "/services/fin-de-chantier.svg",
+      image: "/nettoyagedechantier.jpg",
       name: "Nettoyage fin de chantier",
       shortDescription:
         "Nettoyage complet après travaux : élimination des poussières, résidus de plâtre et débris pour rendre vos locaux impeccables.",
@@ -104,7 +104,7 @@ export const siteConfig = {
     {
       id: "vitres-facades",
       icon: "🪟",
-      image: "/services/vitres-facades.svg",
+      image: "/nettoyagevitreetfacades.jpg",
       name: "Nettoyage vitres et facades",
       shortDescription:
         "Nettoyage professionnel de vitres, baies vitrées et façades d'immeubles pour une brillance durable.",
@@ -114,7 +114,7 @@ export const siteConfig = {
     {
       id: "femmes-de-menage",
       icon: "🧹",
-      image: "/services/femmes-de-menage.svg",
+      image: "/femmedemenage.jpg",
       name: "Femmes de ménage",
       shortDescription:
         "Agents de ménage qualifiées pour l'entretien régulier de votre domicile ou bureau. Disponibles 7j/7.",
@@ -124,7 +124,7 @@ export const siteConfig = {
     {
       id: "tapis-moquettes",
       icon: "🛋️",
-      image: "/services/tapis-moquettes.svg",
+      image: "/nettoyagetapisetmpoquette.jpg",
       name: "Nettoyage tapis et moquettes",
       shortDescription:
         "Nettoyage vapeur en profondeur pour tapis, moquettes et revêtements de sol textiles.",
@@ -134,7 +134,7 @@ export const siteConfig = {
     {
       id: "deratisation",
       icon: "🦟",
-      image: "/services/deratisation.svg",
+      image: "/deratisation.jfif",
       name: "Dératisation, désinsectisation et antiparasites",
       shortDescription:
         "Traitement professionnel contre les nuisibles : rats, insectes et parasites, avec des produits homologués.",
