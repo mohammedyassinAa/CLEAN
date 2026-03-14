@@ -79,23 +79,9 @@ export default function TestimonialsSection() {
           ))}
         </div>
 
-        {/* Trust badges */}
-        <div className="mt-14 flex flex-wrap items-center justify-center gap-8">
-          <TrustBadge icon="🔒" label="Personnel vérifié" />
-          <TrustBadge icon="🌿" label="Produits écologiques" />
-          <TrustBadge icon="✅" label="Service de qualité" />
-          <TrustBadge icon="⭐" label="Service 5 étoiles" />
-        </div>
       </div>
     </section>
   );
 }
 
-function TrustBadge({ icon, label }: { icon: string; label: string }) {
-  return (
-    <div className="flex items-center gap-2 text-slate-600">
-      <span className="text-xl" role="img" aria-label={label}>{icon}</span>
-      <span className="text-sm font-medium">{label}</span>
-    </div>
-  );
-}
+
