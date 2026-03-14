@@ -28,18 +28,22 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-md py-2" : "bg-transparent py-4"
+        scrolled ? "bg-white shadow-md py-2" : "bg-transparent py-3"
       }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="#hero" className="flex items-center" onClick={handleNavClick}>
-          <div className={`relative flex-shrink-0 transition-all duration-300 ${scrolled ? "" : "drop-shadow-md"}`}>
+          <div
+            className={`relative flex-shrink-0 w-12 h-12 md:w-16 md:h-16 transition-all duration-300 ${
+              scrolled ? "" : "drop-shadow-md"
+            }`}
+          >
             <Image
               src="/navbarlogo.png"
               alt={siteConfig.logoAlt}
-              height={44}
-              width={44}
+              fill
+              sizes="(max-width: 768px) 48px, 64px"
               priority
               className="rounded-xl object-contain"
             />
