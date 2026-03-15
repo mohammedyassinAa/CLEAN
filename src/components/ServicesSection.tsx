@@ -327,10 +327,10 @@ function ServiceDetail({ service }: { service: Service }) {
         </div>
       </div>
 
-      {/* ── Why AlphaClean ── */}
+      {/* ── Why Joudclean ── */}
       <div className="bg-white rounded-xl border border-slate-200 p-5">
         <h3 className="text-lg font-bold text-slate-900 mb-3">
-          Pourquoi choisir AlphaClean&nbsp;?
+          Pourquoi choisir Joudclean&nbsp;?
         </h3>
         <ul className="grid sm:grid-cols-2 gap-2">
           {service.whyUs.map((reason) => (
