@@ -125,7 +125,7 @@ export const siteConfig = {
         "Vos canapés et matelas sont nettoyés, désinfectés et prêts à l'usage après séchage",
       ],
       zonesText:
-        "AlphaClean intervient rapidement à Casablanca, Rabat, Mohammedia, Témara et leurs environs, au service des particuliers comme des professionnels (hôtels, résidences, bureaux).",
+        "Joudclean intervient rapidement à Casablanca, Rabat, Mohammedia, Témara et leurs environs, au service des particuliers comme des professionnels (hôtels, résidences, bureaux).",
       whyUs: [
         "Équipe formée, ponctuelle et professionnelle",
         "Matériel haut de gamme et produits certifiés",
@@ -143,7 +143,7 @@ export const siteConfig = {
       basePrice: "Sur devis",
       period: "ponctuel",
       intro:
-        "Après des travaux de rénovation ou de construction, AlphaClean assure un nettoyage complet et minutieux de vos locaux. Nous évacuons les poussières, éliminons les résidus de plâtre, de peinture et les débris pour vous restituer un espace propre, sain et prêt à être habité ou exploité.",
+        "Après des travaux de rénovation ou de construction, Joudclean assure un nettoyage complet et minutieux de vos locaux. Nous évacuons les poussières, éliminons les résidus de plâtre, de peinture et les débris pour vous restituer un espace propre, sain et prêt à être habité ou exploité.",
       benefits: [
         "Élimination totale des poussières de plâtre, ciment et gravats",
         "Dégraissage des surfaces peintes et nettoyage des menuiseries",
@@ -166,7 +166,7 @@ export const siteConfig = {
         "Livraison d'un espace propre, sain et prêt à l'occupation",
       ],
       zonesText:
-        "AlphaClean intervient sur les chantiers à Casablanca, Rabat, Mohammedia, Témara et les zones avoisinantes, pour les particuliers comme pour les promoteurs immobiliers et les entreprises.",
+        "Joudclean intervient sur les chantiers à Casablanca, Rabat, Mohammedia, Témara et les zones avoisinantes, pour les particuliers comme pour les promoteurs immobiliers et les entreprises.",
       whyUs: [
         "Équipe formée, ponctuelle et professionnelle",
         "Matériel haut de gamme et produits certifiés",
@@ -184,7 +184,7 @@ export const siteConfig = {
       basePrice: "Sur devis",
       period: "ponctuel ou régulier",
       intro:
-        "AlphaClean propose un service professionnel de nettoyage de vitres, baies vitrées et façades d'immeubles. Nos techniciens utilisent des équipements adaptés aux grandes hauteurs pour garantir une transparence parfaite et une façade lumineuse qui valorise votre bâtiment.",
+        "Joudclean propose un service professionnel de nettoyage de vitres, baies vitrées et façades d'immeubles. Nos techniciens utilisent des équipements adaptés aux grandes hauteurs pour garantir une transparence parfaite et une façade lumineuse qui valorise votre bâtiment.",
       benefits: [
         "Nettoyage de vitres et baies vitrées de toutes dimensions",
         "Traitement des façades : carrelage, peinture, verre et pierre",
@@ -225,7 +225,7 @@ export const siteConfig = {
       basePrice: "À partir de 350 MAD / passage",
       period: "ponctuel ou régulier",
       intro:
-        "AlphaClean met à votre disposition des agentes de ménage qualifiées et de confiance pour l'entretien régulier ou ponctuel de votre domicile ou de vos locaux professionnels. Disponibles 7j/7, elles s'adaptent à votre emploi du temps et à vos exigences particulières.",
+        "Joudclean met à votre disposition des agentes de ménage qualifiées et de confiance pour l'entretien régulier ou ponctuel de votre domicile ou de vos locaux professionnels. Disponibles 7j/7, elles s'adaptent à votre emploi du temps et à vos exigences particulières.",
       benefits: [
         "Agentes sélectionnées, formées et de confiance",
         "Disponibilité 7j/7 selon vos horaires",
@@ -266,7 +266,7 @@ export const siteConfig = {
       basePrice: "À partir de 150 MAD / pièce",
       period: "ponctuel",
       intro:
-        "AlphaClean prend en charge le nettoyage vapeur de vos tapis, moquettes et revêtements textiles. Notre procédé en profondeur élimine les salissures incrustées, les taches persistantes et les bactéries pour redonner vie à vos sols tout en préservant les fibres.",
+        "Joudclean prend en charge le nettoyage vapeur de vos tapis, moquettes et revêtements textiles. Notre procédé en profondeur élimine les salissures incrustées, les taches persistantes et les bactéries pour redonner vie à vos sols tout en préservant les fibres.",
       benefits: [
         "Nettoyage vapeur haute performance pour tapis et moquettes de toutes tailles",
         "Élimination des taches, odeurs tenaces et micro-organismes",
@@ -289,7 +289,7 @@ export const siteConfig = {
         "Vos revêtements retrouvent leur aspect d'origine, propres et sains",
       ],
       zonesText:
-        "AlphaClean intervient pour le nettoyage de tapis et moquettes à Casablanca, Rabat, Mohammedia, Témara et les régions avoisinantes, chez les particuliers et les professionnels.",
+        "Joudclean intervient pour le nettoyage de tapis et moquettes à Casablanca, Rabat, Mohammedia, Témara et les régions avoisinantes, chez les particuliers et les professionnels.",
       whyUs: [
         "Équipe formée, ponctuelle et professionnelle",
         "Matériel haut de gamme et produits certifiés",
@@ -307,7 +307,7 @@ export const siteConfig = {
       basePrice: "Sur devis",
       period: "ponctuel ou régulier",
       intro:
-        "AlphaClean propose un traitement professionnel et sécurisé contre tous les nuisibles : rats, souris, cafards, punaises, moustiques et autres parasites. Nous utilisons des produits homologués efficaces et sans danger pour les occupants et l'environnement.",
+        "Joudclean propose un traitement professionnel et sécurisé contre tous les nuisibles : rats, souris, cafards, punaises, moustiques et autres parasites. Nous utilisons des produits homologués efficaces et sans danger pour les occupants et l'environnement.",
       benefits: [
         "Identification précise des foyers d'infestation avant traitement",
         "Produits homologués et sécurisés pour les personnes et animaux domestiques",
@@ -330,7 +330,7 @@ export const siteConfig = {
         "Suivi post-traitement pour garantir l'efficacité de l'intervention",
       ],
       zonesText:
-        "AlphaClean assure ses interventions de dératisation et désinsectisation à Casablanca, Rabat, Mohammedia, Témara et alentours, pour les particuliers, entreprises, restaurateurs et établissements de santé.",
+        "Joudclean assure ses interventions de dératisation et désinsectisation à Casablanca, Rabat, Mohammedia, Témara et alentours, pour les particuliers, entreprises, restaurateurs et établissements de santé.",
       whyUs: [
         "Équipe formée, ponctuelle et professionnelle",
         "Matériel haut de gamme et produits certifiés",
