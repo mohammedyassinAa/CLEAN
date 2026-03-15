@@ -96,11 +96,42 @@ export const siteConfig = {
       id: "canape-matelas",
       icon: "🛋️",
       image: "/nonettoyagecanapeetmatelas.jpg",
-      name: "Nettoyage canape et matelas",
+      name: "Nettoyage canapés et matelas",
       shortDescription:
-        "nous offrons un nettoyage profond pour les canape et matelas avec desinfection et sterilisation et traitement des acariens avec sechage et service garantie a 100%",
+        "Nettoyage vapeur professionnel de vos canapés et matelas avec désinfection complète, élimination des acariens et séchage rapide — résultat garanti à 100 %.",
       basePrice: "Sur devis",
       period: "ponctuel",
+      intro:
+        "Notre équipe spécialisée prend en charge le nettoyage professionnel de vos canapés et matelas grâce à une technologie vapeur haute pression. Nous éliminons en profondeur les allergènes, les acariens et les taches tenaces pour vous offrir un résultat impeccable et un séchage maîtrisé.",
+      benefits: [
+        "Traitement vapeur haute pression pénétrant en profondeur dans les fibres",
+        "Élimination efficace des taches, mauvaises odeurs et allergènes",
+        "Désinfection complète contre les acariens et bactéries",
+        "Séchage maîtrisé permettant une utilisation rapide après l'intervention",
+        "Équipe ponctuelle, discrète et rigoureuse",
+        "Service disponible à Casablanca, Rabat, Mohammedia, Témara et environs",
+      ],
+      included: [
+        "Inspection préalable de l'état de vos meubles",
+        "Prétraitement ciblé des taches résistantes",
+        "Nettoyage vapeur en profondeur du canapé et du matelas",
+        "Désodorisation et désinfection complète",
+        "Contrôle final de la qualité avec le client",
+      ],
+      steps: [
+        "Vous nous contactez par téléphone ou via WhatsApp",
+        "Nous évaluons votre besoin et vous adressons un devis gratuit",
+        "Notre équipe intervient rapidement à votre domicile",
+        "Vos canapés et matelas sont nettoyés, désinfectés et prêts à l'usage après séchage",
+      ],
+      zonesText:
+        "AlphaClean intervient rapidement à Casablanca, Rabat, Mohammedia, Témara et leurs environs, au service des particuliers comme des professionnels (hôtels, résidences, bureaux).",
+      whyUs: [
+        "Équipe formée, ponctuelle et professionnelle",
+        "Matériel haut de gamme et produits certifiés",
+        "Résultats durables et garantis",
+        "Devis gratuit et sans engagement",
+      ],
     },
     {
       id: "fin-de-chantier",
@@ -108,19 +139,81 @@ export const siteConfig = {
       image: "/nettoyagedechantier.jpg",
       name: "Nettoyage fin de chantier",
       shortDescription:
-        "Nettoyage complet après travaux : élimination des poussières, résidus de plâtre et débris pour rendre vos locaux impeccables.",
+        "Nettoyage complet après travaux : élimination des poussières, résidus de plâtre et débris pour rendre vos locaux impeccables et prêts à être occupés.",
       basePrice: "Sur devis",
       period: "ponctuel",
+      intro:
+        "Après des travaux de rénovation ou de construction, AlphaClean assure un nettoyage complet et minutieux de vos locaux. Nous évacuons les poussières, éliminons les résidus de plâtre, de peinture et les débris pour vous restituer un espace propre, sain et prêt à être habité ou exploité.",
+      benefits: [
+        "Élimination totale des poussières de plâtre, ciment et gravats",
+        "Dégraissage des surfaces peintes et nettoyage des menuiseries",
+        "Nettoyage des vitres, carrelages et sanitaires post-travaux",
+        "Aspiration et lavage des sols de toutes surfaces",
+        "Intervention rapide pour respecter vos délais de livraison",
+        "Équipe expérimentée et équipée de matériel adapté",
+      ],
+      included: [
+        "Dépoussiérage de toutes les surfaces (murs, plafonds, rebords)",
+        "Nettoyage des vitres et menuiseries intérieures et extérieures",
+        "Lavage des sols, carrelages et parquets",
+        "Nettoyage des sanitaires et de la cuisine",
+        "Évacuation des déchets légers restants",
+      ],
+      steps: [
+        "Vous nous décrivez l'ampleur des travaux réalisés",
+        "Nous évaluons le chantier et vous proposons un devis gratuit",
+        "Notre équipe intervient selon le calendrier convenu",
+        "Livraison d'un espace propre, sain et prêt à l'occupation",
+      ],
+      zonesText:
+        "AlphaClean intervient sur les chantiers à Casablanca, Rabat, Mohammedia, Témara et les zones avoisinantes, pour les particuliers comme pour les promoteurs immobiliers et les entreprises.",
+      whyUs: [
+        "Équipe formée, ponctuelle et professionnelle",
+        "Matériel haut de gamme et produits certifiés",
+        "Résultats durables et garantis",
+        "Devis gratuit et sans engagement",
+      ],
     },
     {
       id: "vitres-facades",
       icon: "🪟",
       image: "/nettoyagevitreetfacades.jpg",
-      name: "Nettoyage vitres et facades",
+      name: "Nettoyage vitres et façades",
       shortDescription:
-        "Nettoyage professionnel de vitres, baies vitrées et façades d'immeubles pour une brillance durable.",
+        "Nettoyage professionnel de vitres, baies vitrées et façades d'immeubles pour une brillance durable et une façade valorisée.",
       basePrice: "Sur devis",
       period: "ponctuel ou régulier",
+      intro:
+        "AlphaClean propose un service professionnel de nettoyage de vitres, baies vitrées et façades d'immeubles. Nos techniciens utilisent des équipements adaptés aux grandes hauteurs pour garantir une transparence parfaite et une façade lumineuse qui valorise votre bâtiment.",
+      benefits: [
+        "Nettoyage de vitres et baies vitrées de toutes dimensions",
+        "Traitement des façades : carrelage, peinture, verre et pierre",
+        "Équipement adapté aux travaux en hauteur en toute sécurité",
+        "Résultat brillant et durable sans traces ni résidus",
+        "Intervention soigneuse et rapide",
+        "Service disponible pour particuliers et copropriétés",
+      ],
+      included: [
+        "Nettoyage des vitres intérieures et extérieures",
+        "Dégraissage des cadres et jointures de fenêtres",
+        "Nettoyage et traitement des façades de bâtiments",
+        "Élimination des traces de pollution, de calcaire et de mousse",
+        "Contrôle final de satisfaction avec le client",
+      ],
+      steps: [
+        "Vous nous contactez pour décrire vos besoins",
+        "Nous étudions votre bâtiment et vous envoyons un devis sur mesure",
+        "Nos techniciens interviennent dans les délais convenus",
+        "Vos vitres et façades retrouvent leur éclat d'origine",
+      ],
+      zonesText:
+        "Nous intervenons à Casablanca, Rabat, Mohammedia, Témara et les villes voisines, pour les résidences privées, les immeubles de bureaux et les établissements hôteliers.",
+      whyUs: [
+        "Équipe formée, ponctuelle et professionnelle",
+        "Matériel haut de gamme et produits certifiés",
+        "Résultats durables et garantis",
+        "Devis gratuit et sans engagement",
+      ],
     },
     {
       id: "femmes-de-menage",
@@ -128,19 +221,81 @@ export const siteConfig = {
       image: "/femmedemenage.jpg",
       name: "Femmes de ménage",
       shortDescription:
-        "Agents de ménage qualifiées pour l'entretien régulier de votre domicile ou bureau. Disponibles 7j/7.",
+        "Agents de ménage qualifiées pour l'entretien régulier ou ponctuel de votre domicile ou bureau. Disponibles 7j/7, discrètes et de confiance.",
       basePrice: "À partir de 350 MAD / passage",
       period: "ponctuel ou régulier",
+      intro:
+        "AlphaClean met à votre disposition des agentes de ménage qualifiées et de confiance pour l'entretien régulier ou ponctuel de votre domicile ou de vos locaux professionnels. Disponibles 7j/7, elles s'adaptent à votre emploi du temps et à vos exigences particulières.",
+      benefits: [
+        "Agentes sélectionnées, formées et de confiance",
+        "Disponibilité 7j/7 selon vos horaires",
+        "Entretien régulier ou intervention ponctuelle selon vos besoins",
+        "Discrétion absolue et respect de votre espace",
+        "Possibilité de confier une clé pour les interventions en votre absence",
+        "Service adapté aux domiciles, bureaux et petits commerces",
+      ],
+      included: [
+        "Dépoussiérage et aspiration de toutes les pièces",
+        "Nettoyage des surfaces, meubles et équipements",
+        "Entretien de la cuisine et des sanitaires",
+        "Lavage et lustrage des sols",
+        "Rangement léger selon vos consignes",
+      ],
+      steps: [
+        "Vous nous faites part de vos besoins et de la fréquence souhaitée",
+        "Nous vous proposons une agente disponible selon votre planning",
+        "Première intervention avec présentation de l'agente dédiée",
+        "Entretien régulier assuré avec le même interlocuteur attitré",
+      ],
+      zonesText:
+        "Nos agentes de ménage interviennent à Casablanca, Rabat, Mohammedia, Témara et les quartiers environnants, pour les particuliers et les professionnels.",
+      whyUs: [
+        "Équipe formée, ponctuelle et professionnelle",
+        "Matériel haut de gamme et produits certifiés",
+        "Résultats durables et garantis",
+        "Devis gratuit et sans engagement",
+      ],
     },
     {
       id: "tapis-moquettes",
-      icon: "🛋️",
+      icon: "🧶",
       image: "/nettoyagetapisetmpoquette.jpg",
       name: "Nettoyage tapis et moquettes",
       shortDescription:
-        "Nettoyage vapeur en profondeur pour tapis, moquettes et revêtements de sol textiles.",
+        "Nettoyage vapeur en profondeur pour tapis, moquettes et revêtements de sol textiles — couleurs ravivées, fibres protégées.",
       basePrice: "À partir de 150 MAD / pièce",
       period: "ponctuel",
+      intro:
+        "AlphaClean prend en charge le nettoyage vapeur de vos tapis, moquettes et revêtements textiles. Notre procédé en profondeur élimine les salissures incrustées, les taches persistantes et les bactéries pour redonner vie à vos sols tout en préservant les fibres.",
+      benefits: [
+        "Nettoyage vapeur haute performance pour tapis et moquettes de toutes tailles",
+        "Élimination des taches, odeurs tenaces et micro-organismes",
+        "Préservation et ravivage des couleurs et des fibres",
+        "Séchage optimisé pour une utilisation rapide après nettoyage",
+        "Traitement antiparasitaire disponible en option",
+        "Service à domicile ou en atelier selon vos préférences",
+      ],
+      included: [
+        "Inspection et évaluation de l'état de vos revêtements",
+        "Prétraitement ciblé des taches résistantes",
+        "Nettoyage vapeur en profondeur",
+        "Rinçage et extraction de l'humidité",
+        "Désodorisation et contrôle final de qualité",
+      ],
+      steps: [
+        "Vous nous contactez avec une description de vos tapis et moquettes",
+        "Nous établissons un devis gratuit adapté à vos besoins",
+        "Intervention à votre domicile aux horaires convenus",
+        "Vos revêtements retrouvent leur aspect d'origine, propres et sains",
+      ],
+      zonesText:
+        "AlphaClean intervient pour le nettoyage de tapis et moquettes à Casablanca, Rabat, Mohammedia, Témara et les régions avoisinantes, chez les particuliers et les professionnels.",
+      whyUs: [
+        "Équipe formée, ponctuelle et professionnelle",
+        "Matériel haut de gamme et produits certifiés",
+        "Résultats durables et garantis",
+        "Devis gratuit et sans engagement",
+      ],
     },
     {
       id: "deratisation",
@@ -148,9 +303,40 @@ export const siteConfig = {
       image: "/deratisation.jfif",
       name: "Dératisation, désinsectisation et antiparasites",
       shortDescription:
-        "Traitement professionnel contre les nuisibles : rats, insectes et parasites, avec des produits homologués.",
+        "Traitement professionnel contre les nuisibles : rats, insectes et parasites, avec des produits homologués et sécurisés.",
       basePrice: "Sur devis",
       period: "ponctuel ou régulier",
+      intro:
+        "AlphaClean propose un traitement professionnel et sécurisé contre tous les nuisibles : rats, souris, cafards, punaises, moustiques et autres parasites. Nous utilisons des produits homologués efficaces et sans danger pour les occupants et l'environnement.",
+      benefits: [
+        "Identification précise des foyers d'infestation avant traitement",
+        "Produits homologués et sécurisés pour les personnes et animaux domestiques",
+        "Traitement ciblé et discret par des techniciens certifiés",
+        "Efficacité rapide avec résultats durables",
+        "Intervention préventive ou curative selon votre situation",
+        "Rapport d'intervention remis après chaque traitement",
+      ],
+      included: [
+        "Diagnostic complet de votre espace",
+        "Mise en place de pièges et appâts adaptés",
+        "Application de produits désinsectisants et dératisants homologués",
+        "Traitement préventif des zones à risque",
+        "Rapport d'intervention et recommandations post-traitement",
+      ],
+      steps: [
+        "Vous nous décrivez votre problème de nuisibles",
+        "Nous évaluons la situation et vous proposons une solution sur devis",
+        "Nos techniciens interviennent discrètement dans les délais convenus",
+        "Suivi post-traitement pour garantir l'efficacité de l'intervention",
+      ],
+      zonesText:
+        "AlphaClean assure ses interventions de dératisation et désinsectisation à Casablanca, Rabat, Mohammedia, Témara et alentours, pour les particuliers, entreprises, restaurateurs et établissements de santé.",
+      whyUs: [
+        "Équipe formée, ponctuelle et professionnelle",
+        "Matériel haut de gamme et produits certifiés",
+        "Résultats durables et garantis",
+        "Devis gratuit et sans engagement",
+      ],
     },
   ],
 
