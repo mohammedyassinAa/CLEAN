@@ -162,7 +162,7 @@ function ServiceDetail({ service }: { service: Service }) {
           style={{ backgroundColor: siteConfig.colors.primary }}
         >
           <PhoneIcon />
-          📞 Appelez-nous
+          Appelez-nous
         </a>
         <a
           href={whatsappQuoteUrl}
@@ -280,7 +280,7 @@ function ServiceDetail({ service }: { service: Service }) {
             style={{ backgroundColor: siteConfig.colors.primary }}
           >
             <PhoneIcon />
-            📞 Appelez-nous
+            Appelez-nous
           </a>
           <a
             href={whatsappQuoteUrl}
@@ -310,7 +310,7 @@ function ServiceDetail({ service }: { service: Service }) {
             style={{ backgroundColor: siteConfig.colors.primary }}
           >
             <PhoneIcon />
-            📞 Appelez-nous
+            Appelez-nous
           </a>
           <a
             href={whatsappQuoteUrl}
